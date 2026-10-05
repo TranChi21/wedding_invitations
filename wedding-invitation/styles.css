@@ -98,7 +98,6 @@ body {
 .paper {
   position: relative;
   background: var(--paper);
-  border-radius: 17px 17px 34px 34px;
   overflow: hidden;
   padding: 0 12px 0;
 }
