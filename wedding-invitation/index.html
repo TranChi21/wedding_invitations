@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#861f2c" />
+  <title>Thiệp cưới | Trần Chí &amp; Nguyễn Lê Kim Huyền</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kaisei+Decol:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js" defer></script>
+</head>
+
+<body>
+  <main class="invitation" aria-label="Thiệp cưới Trần Chí và Nguyễn Lê Kim Huyền">
+    <header class="cover">
+      <img class="cover-photo"
+        src="https://images.unsplash.com/photo-1738508381284-92cb40cf9dfe?auto=format&amp;fit=crop&amp;w=900&amp;h=1600&amp;q=85&amp;crop=faces"
+        alt="Cô dâu và chú rể đứng cạnh nhau, ảnh nền mẫu" />
+      <div class="cover-title">
+        <h1>THƯ MỜI TIỆC CƯỚI</h1>
+        <p class="cover-names">Trần Chí <span>&amp;</span> Kim Huyền</p>
+        <p class="cover-date">28.11.2026</p>
+      </div>
+    </header>
+
+    <div class="red-frame">
+      <article class="paper">
+        <section class="invitation-card">
+          <h2 class="english-title">Wedding Invitation</h2>
+          <div class="family-row">
+            <div>
+              <b>NHÀ TRAI</b><strong>Ông: TRẦN NGÀ<br />Bà: NGUYỄN THỊ HẢO</strong><span>108 Thôn 2, Xã EaKnuếc Tỉnh
+                Đăk Lăk</span>
+            </div>
+            <img src="assets/double-happiness.png" alt="Song hỷ" class="double-happiness" />
+            <div>
+              <b>NHÀ GÁI</b><strong>Ông: NGUYỄN NGỌC XUÂN<br />Bà: LÊ THỊ THANH HỒNG</strong><span>24/11 Mạc Đỉnh Chi
+                Phường Pleiku, Tỉnh Gia Lai</span>
+            </div>
+          </div>
+          <p class="intro">Trân Trọng Báo Tin Lễ Tân Hôn Của Gia Đình</p>
+          <h2 class="script name">Trần Chí</h2>
+          <p class="child-role">Trưởng Nam</p>
+          <p class="ampersand">&amp;</p>
+          <h2 class="script name">Nguyễn Lê Kim Huyền</h2>
+          <p class="child-role">Út Nữ</p>
+        </section>
+
+        <div class="tear" aria-hidden="true">
+          <img src="assets/floral-divider.png" alt="" />
+        </div>
+
+        <section class="reception event">
+          <p class="eyebrow">TIỆC MỪNG LỄ THÀNH HÔN</p>
+          <h3>11:00 - Thứ 7</h3>
+          <h2 class="date-heading">28.11.2026</h2>
+          <p class="lunar">(Nhằm Ngày 20 Tháng 10 Năm Bính Ngọ)</p>
+          <p class="location">108 Thôn 2, Xã EaKnuếc, Tỉnh Đăk Lăk</p>
+        </section>
+
+        <section class="calendar" aria-label="Lịch tháng 12 năm 2025">
+          <h2>THÁNG 11 - 2026</h2>
+          <div class="calendar-grid" id="calendar-grid"></div>
+        </section>
+
+        <div class="tear" aria-hidden="true">
+          <img src="assets/floral-divider.png" alt="" />
+        </div>
+
+        <section class="venue event">
+          <h2 class="script">Địa Điểm Tổ Chức</h2>
+          <h3>TƯ GIA NHÀ TRAI</h3>
+          <p>>108 Thôn 2, Xã EaKnuếc, Tỉnh Đăk Lăk</p>
+          <a class="button map-link"
+            href="https://www.google.com/maps/dir/?api=1&amp;destination=12.706832605561699%2C108.21969064176291"
+            target="_blank" rel="noreferrer">Xem Chỉ Đường</a>
+          <iframe title="Bản đồ địa điểm tổ chức" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=12.706832605561699%2C108.21969064176291&amp;z=16&amp;output=embed"></iframe>
+        </section>
+
+        <div class="tear" aria-hidden="true">
+          <img src="assets/floral-divider.png" alt="" />
+        </div>
+
+        <section class="gallery event" aria-labelledby="gallery-title">
+          <div class="gallery-heading">
+            <h2 class="script" id="gallery-title">Album hình cưới</h2>
+            <span aria-hidden="true">♥</span>
+          </div>
+          <div class="gallery-preview" id="gallery-preview" aria-label="Danh sách ảnh"></div>
+        </section>
+
+        <footer class="welcome script">Rất Hân Hạnh Được Đón Tiếp!</footer>
+      </article>
+    </div>
+  </main>
+
+  <button class="music-toggle" id="music-toggle" aria-label="Bật nhạc" title="Bật / Tắt nhạc">
+    <span class="music-symbol">♫</span><span class="music-slash"></span>
+  </button>
+  <audio id="wedding-song" loop preload="none"
+    src="https://statics.pancake.vn/web-media/5e/ee/bf/4a/afa10d3bdf98ca17ec3191ebbfd3c829d135d06939ee1f1b712d731d-w:0-h:0-l:2938934-t:audio/mpeg.mp3"></audio>
+
+  <dialog class="photo-viewer" id="photo-viewer" aria-label="Xem thư viện ảnh">
+    <button class="photo-close" id="photo-close" type="button" aria-label="Đóng thư viện ảnh">
+      ×
+    </button>
+    <button class="photo-arrow photo-prev" id="photo-prev" type="button" aria-label="Ảnh trước">
+      ‹
+    </button>
+    <figure class="photo-main">
+      <img id="photo-selected" src="" alt="" />
+      <figcaption id="photo-caption"></figcaption>
+    </figure>
+    <button class="photo-arrow photo-next" id="photo-next" type="button" aria-label="Ảnh tiếp theo">
+      ›
+    </button>
+    <div class="photo-thumbnails" id="photo-thumbnails" aria-label="Chọn ảnh"></div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+
+</html>
